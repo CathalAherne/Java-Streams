@@ -115,7 +115,7 @@ public class JavaStreams {
 
 		Stream<String> music = Files.lines(Paths.get("bands.txt"));
 		music
-				.filter(x -> x.contains("Shite"))
+				.filter(x -> x.contains("Crooner"))
 				.map(x -> x.split(":")[0])
 				.forEach(System.out::println);
 
